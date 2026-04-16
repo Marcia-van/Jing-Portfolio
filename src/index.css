@@ -1,0 +1,87 @@
+@import "tailwindcss";
+@reference "tailwindcss";
+
+/* ============================================================
+   基础全局配置 (GLOBAL SETTINGS)
+   ============================================================ */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #F5EFE6; /* 统一米色背景 */
+  color: #3E2F2B;
+  font-family: sans-serif;
+}
+
+@layer components {
+  /* 强制分页核心类：确保每一页占据 100% 屏幕高度 */
+  .full-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 80px 0; /* 为固定导航栏留出空间 */
+    border-bottom: 1px solid rgba(62, 47, 43, 0.05); /* 淡淡的分隔线 */
+  }
+
+  /* 常用颜色类 */
+  .text-main { color: #3E2F2B; }
+  .text-accent { color: #1F3A5F; }
+  .bg-accent { background-color: #1F3A5F; }
+}
+
+/* ============================================================
+   动画逻辑 (ANIMATIONS)
+   ============================================================ */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-in {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* ============================================================
+   各页面特定样式调整区域 (PAGE SPECIFIC)
+   ============================================================ */
+
+/* --- PAGE 1: HOME --- */
+#home {
+  background: linear-gradient(135deg, #F5EFE6 0%, #EAE2D6 100%);
+}
+
+/* --- PAGE 2: ABOUT --- */
+#about {
+  /* 稍微加深背景色，增加层次感 */
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* --- PAGE 3: EXPERIENCE --- */
+#experience {
+  /* 确保长列表在手机端不会溢出 */
+}
+
+/* --- PAGE 4: EDUCATION & SKILLS --- */
+#education {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* --- PAGE 5: CONTACT --- */
+#contact {
+  /* 底部页面样式 */
+}
+
+/* ============================================================
+   移动端优化补丁
+   ============================================================ */
+@media (max-width: 1024px) {
+  .full-page {
+    height: auto;
+    min-height: 100vh;
+    padding: 60px 20px;
+  }
+}
