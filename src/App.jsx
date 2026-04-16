@@ -155,7 +155,7 @@ const App = () => {
       <div className="relative w-[280px] lg:w-[360px] aspect-[3/4] overflow-hidden rounded-2xl transition-all duration-500 transform group-hover:scale-[1.03] group-hover:shadow-2xl lg:-translate-x-0">
 
         <img
-          src="/assets/me1.png"
+          src="assets/me1.png"
           alt="Jing Zhang"
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
           onError={(e) => { e.target.src = 'https://via.placeholder.com/380x507/3E2F2B/F5EFE6?text=Jing+Zhang' }}
@@ -392,7 +392,7 @@ const App = () => {
               label: "INTERNATIONAL TRADE FAIR",
               title: "China International Fair for Trade in Services (CIFTIS)",
               role: "Product Communication & External Engagement",
-              imageUrl: "/assets/FMH.jpg",
+              imageUrl: "assets/FMH.jpg",
               caption: "Exhibitor badge – CIFTIS",
               points: [
                 "Introduced the company’s products to **domestic and international exhibitors** and visitors in a major trade fair environment.",
@@ -408,7 +408,7 @@ const App = () => {
               label: "INTERNATIONAL EXHIBITION",
               title: "International Horticultural Exhibition 2019",
               role: "Bilingual Presentation & On-site Coordination",
-              imageUrl: "/assets/SYH.jpg",
+              imageUrl: "assets/SYH.jpg",
               caption: "Exhibitor badge – Expo 2019 Beijing",
               points: [
                 "Provided **bilingual communication** and visitor-facing support in an international exhibition environment.",
